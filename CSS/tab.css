@@ -1,0 +1,21 @@
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+.shorten-link .btn {
+  margin-left: 0;
+}
+.social-links {
+  flex-direction: column;
+}
+.shorten-link input {
+  width: 65%;
+}
+.link {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.copy-link {
+  text-align: end;
+}

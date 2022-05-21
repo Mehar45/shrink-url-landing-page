@@ -1,0 +1,140 @@
+/* hamburger and navlinks */
+.hamburger {
+  background-image: url("../images/icon-hamburger.svg");
+  height: 18px;
+  width: 35px;
+}
+.nav-links {
+  visibility: hidden;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-violet);
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  border-radius: 5%;
+  transform: translateY(-150%);
+  transition: transform 250ms linear;
+}
+.toggle {
+  visibility: visible;
+  transform: translateY(0);
+}
+#main-header nav ul li {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+#main-header nav ul li a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+#main-header nav a:hover {
+  color: var(--cyan);
+}
+#main-header nav ul li:nth-child(3) {
+  margin-right: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid hsl(258, 10%, 50%);
+}
+#main-header nav ul li a:last-child {
+  margin-top: 0.5rem;
+}
+
+/* Hero section */
+.hero-section {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.hero-section__intro {
+  text-align: center;
+  grid-row: 2;
+}
+.hero-section__intro h1 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+.hero-section__intro p {
+  margin-top: 2rem;
+  width: 100%;
+}
+form {
+  grid-column: 1 / 2;
+}
+.shorten-link {
+  background-image: url("../images/bg-shorten-mobile.svg");
+  background-position: top right;
+  padding: 0;
+  padding-top: 2rem;
+}
+.shorten-link input {
+  width: 90%;
+}
+.shorten-link .btn {
+  margin-top: 1rem;
+  margin-left: 0;
+  width: 90%;
+}
+
+/* advance stats */
+#advance-stats .container {
+  flex-direction: column;
+  height: auto;
+  row-gap: 5rem;
+  text-align: center;
+}
+#advance-stats .container::before {
+  top: 0;
+  left: 48.5%;
+  height: 100%;
+  width: 10px;
+}
+
+/* Boost section */
+.boost h2 {
+  font-size: 1.75rem;
+}
+
+/* Footer */
+footer .container {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.social-links {
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.link {
+  flex-direction: column;
+  align-items: flex-start;
+  text-overflow: ellipsis;
+  border: 1px solid #a1a1a1;
+}
+.link > span {
+  width: 100%;
+  padding-bottom: 0.75rem;
+  border-bottom: 1.5px solid hsl(258, 7%, 81%);
+}
+.copy-link {
+  text-align: start;
+}
+.copy-link span {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-right: 0;
+}
+
+/* advance stats */
+.card {
+  align-self: center !important;
+}

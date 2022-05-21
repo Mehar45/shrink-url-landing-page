@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/desktop.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width:768px)"
+      href="./CSS/tab.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width:500px)"
+      href="./CSS/mobile.css"
+    />
+    <title>Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <header id="main-header" class="container">
+      <div class="logo" role="logo" style="align-self: center">
+        <img src="./images/logo.svg" alt="header logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#" class="btn">Sign Up</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger"></div>
+    </header>
+
+    <main class="hero-section container">
+      <div class="hero-section__intro">
+        <h1>More than just shorter links</h1>
+        <p>
+          Build your brand’s recognition and get detailed insights on how
+          yourlinks are performing.
+        </p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+      <figure class="hero-section__img">
+        <img
+          style="width: 100%"
+          src="./images/illustration-working.svg"
+          alt="Introduction image"
+        />
+      </figure>
+      <form>
+        <div class="container shorten-link">
+          <input type="text" placeholder="Shorten a link here..." name="url" />
+          <button name="shrinkBtn" class="btn">Shorten It!</button>
+          <span class="err">Please add a link</span>
+        </div>
+      </form>
+    </main>
+
+    <div class="shortened-links">
+      <div class="container"></div>
+    </div>
+    <section id="advance-stats">
+      <div class="advance-stats__intro">
+        <h2>Advanced Statistics</h2>
+        <p>
+          Track how your links are performing across the web with <br />
+          our advanced statistics dashboard.
+        </p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="icon brand"></div>
+          <h3>Brand Recognition</h3>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon records"></div>
+          <h3>Detailed Records</h3>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon customize"></div>
+          <h3>Fully Customizable</h3>
+          <p>
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="boost">
+      <h2>Boost your links today</h2>
+      <a class="btn" href="#">Get Started</a>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="logo" role="logo">
+          <img
+            style="
+              filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(254deg)
+                brightness(100%) contrast(101%);
+            "
+            src="./images/logo.svg"
+            alt="footer logo"
+          />
+        </div>
+        <div class="features">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#">Link Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="company">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="social-links">
+            <li>
+              <a href="#"
+                ><img src="./images/icon-facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/icon-pinterest.svg" alt="pinterest"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/icon-instagram.svg" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-links"></div>
+    </footer>
+    <div class="attribution" style="text-align: center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      Coded by <a href="#">Safi Ullah</a>
+    </div>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
